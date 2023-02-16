@@ -1,0 +1,6 @@
+# os shit
+.DS_Store
+
+# IDE shit
+.vscode/
+.idea/
