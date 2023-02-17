@@ -40,6 +40,10 @@ a:visited {
 }
 
 a:hover {
+	color: var(--red);
+}
+
+a:hover:visited {
 	color: var(--dark-red);
 }
 
