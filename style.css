@@ -47,14 +47,52 @@ a:hover:visited {
 	color: var(--dark-red);
 }
 
+/* navbar */
+
+.hnav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+	background-color: #202020;
+}
+
+.hnav a {
+	padding: 10px 8px;
+	text-decoration: none;
+	color: #9b9b9b;
+	font-size: x-large;
+}
+
+.hnav a:hover {
+	color: #9b9b9b;
+}
+
+.hnav a:hover {
+	background-color: #1a1a1a;
+}
+
 /* main shit */
 
+body {
+	padding: 0;
+	margin: 0;
+	min-height: 100%;
+}
+
 main {
+	padding: 2em;
 	font-size: 16px;
+	margin-bottom: 2em;
+	flex: 1 1 auto;
 }
 
 footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	font-size: medium;
+	background-color: #2a2a2a;
 }
