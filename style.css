@@ -29,6 +29,20 @@ body {
 	flex-direction: column;
 }
 
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
 /* links */
 
 a {
@@ -95,4 +109,18 @@ footer {
 	width: 100%;
 	font-size: medium;
 	background-color: #2a2a2a;
+}
+
+#content {
+	max-width: 50%;
+}
+
+#sidebar-right {
+	position: fixed;
+	top: 25%;
+	right: 0;
+}
+
+#discord-iframe {
+	margin-right: 1em;
 }

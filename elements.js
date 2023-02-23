@@ -25,7 +25,6 @@ class PageHeader extends HTMLElement {
 				<a href="/">Home</a>
 				<a href="/about">About</a>
 				<a href="/projects">Projects</a>
-				<a href="/links">Links</a>
 			</nav>
 		</header>
 		`;
