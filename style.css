@@ -20,19 +20,58 @@ body {
 	color: var(--pink);
 }
 
+/* custom elements */
+system-member {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1em;
+}
+
+system-member>* {
+	padding-right: 1em;
+}
+
+system-member h3 {
+	margin: 0px;
+}
+
 /* classes */
+
+.member-data>p {
+	font-size: medium;
+	padding-right: 1em;
+	margin: 3px 0px 3px 0px;
+}
+
+.pfp>img {
+	width: 100%;
+	border-radius: 5%;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 0 0 0 3px;
+}
+
+.pfp {
+	width: 8em;
+}
+
+.column {
+	flex-direction: column;
+}
+
+.row {
+	flex-direction: row;
+}
 
 .centered-flex {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	flex-direction: column;
 }
 
 .flex {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
 }
 
 .bold {
@@ -100,7 +139,6 @@ main {
 	padding: 2em;
 	font-size: 16px;
 	margin-bottom: 2em;
-	flex: 1 1 auto;
 }
 
 footer {
@@ -111,16 +149,24 @@ footer {
 	background-color: #2a2a2a;
 }
 
-#content {
-	max-width: 50%;
-}
-
-#sidebar-right {
+#embed-right {
 	position: fixed;
-	top: 25%;
+	/* top: 25%; */
+	top: 3em;
 	right: 0;
 }
 
 #discord-iframe {
 	margin-right: 1em;
+}
+
+#members {
+	/* flex */
+	display: flex;
+	flex-flow: row wrap;
+	flex: 100% 0% 100%;
+	justify-content: space-between;
+	align-content: flex-start;
+	align-items: flex-start;
+	row-gap: 10em;
 }
