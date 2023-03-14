@@ -22,6 +22,7 @@ body {
 
 /* custom elements */
 system-member {
+	width: 500px;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 1em;
@@ -52,7 +53,7 @@ system-member h3 {
 }
 
 .pfp {
-	width: 8em;
+	width: 135px;
 }
 
 .column {
@@ -168,5 +169,4 @@ footer {
 	justify-content: space-between;
 	align-content: flex-start;
 	align-items: flex-start;
-	column-gap: 3em;
 }
