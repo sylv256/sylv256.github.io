@@ -164,9 +164,9 @@ footer {
 	/* flex */
 	display: flex;
 	flex-flow: row wrap;
-	flex: 100% 0% 100%;
+	flex: 0 0 auto;
 	justify-content: space-between;
 	align-content: flex-start;
 	align-items: flex-start;
-	row-gap: 10em;
+	column-gap: 3em;
 }
