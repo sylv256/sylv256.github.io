@@ -170,4 +170,5 @@ footer {
 	justify-content: space-between;
 	align-content: flex-start;
 	align-items: flex-start;
+	row-gap: 30px;
 }
