@@ -38,10 +38,12 @@ class SystemMember extends HTMLElement {
 	}
 
 	connectedCallback() {
+		SAPI.memberCount++;
+		
 		let name = this.getAttribute("name");
 		let pronouns = this.getAttribute("pronouns");
 		let member_tag = this.getAttribute("member-tag");
-		member_tag = member_tag === null ? "-" + name[0].toLowerCase() : member_tag;
+		member_tag = "-" + (member_tag === null ? name[0].toLowerCase() : member_tag);
 		let color = this.getAttribute("color");
 		color = color === null ? "#dd6706" : color;
 		let format = this.getAttribute("pfp-format");
