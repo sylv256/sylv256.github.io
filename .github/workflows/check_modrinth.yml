@@ -1,0 +1,37 @@
+on:
+  workflow_dispatch:
+#   schedule:
+#   - cron: "*/5 * * * *"
+jobs:
+  check_modrinth:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Web Request Action
+        uses: Satak/webrequest-action@v1.2.3
+        with:
+          # Web request URL endpoint
+          url: https://api.modrinth.com/v2/search
+          # Web request method (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)
+          method: GET # default is GET
+          # Web request payload in JSON format
+          payload: |
+            {
+              "query": "",
+              "index": "newest",
+              "offset": 0,
+              "limit": 1,
+              "filters": "categories=quilt AND categories=fabric"
+            }
+          # Web request headers in JSON format
+          headers: |
+            {
+              "User-Agent": "SylvKT@github.com/SylvKT.github.io/undefined (sylv.gay)"
+            }
+          # username for BASIC auth
+#           username: # optional
+          # password for BASIC auth
+#           password: # optional
+          run: |
+            export OUTPUT=${{ steps.webhook.outputs.output }}
+            echo $OUTPUT
+    
