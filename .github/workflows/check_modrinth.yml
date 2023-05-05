@@ -31,7 +31,8 @@ jobs:
 #           username: # optional
           # password for BASIC auth
 #           password: # optional
-          run: |
-            export OUTPUT=${{ steps.webhook.outputs.output }}
-            echo $OUTPUT
+      - name: Print output
+        run: |
+          export OUTPUT=${{ steps.webhook.outputs.output }}
+          echo $OUTPUT
     
