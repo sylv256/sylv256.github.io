@@ -7,31 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check-modrinth
-        uses: Satak/webrequest-action@v1.2.3
-        with:
-          # Web request URL endpoint
-          url: https://api.modrinth.com/v2/search
-          # Web request method (`GET`, `POST`, `PUT`, `PATCH`, `DELETE`)
-          method: GET # default is GET
-          # Web request payload in JSON format
-          payload: |
-            {
-              "query": "",
-              "index": "newest",
-              "offset": 0,
-              "limit": 1,
-              "filters": "categories=quilt AND categories=fabric"
-            }
-          # Web request headers in JSON format
-          headers: |
-            {
-              "User-Agent": "SylvKT@github.com/SylvKT.github.io/undefined (sylv.gay)"
-            }
-          # username for BASIC auth
-#           username: # optional
-          # password for BASIC auth
-#           password: # optional
-      - name: Print output
-        run: |
-          echo ${{ steps.check-modrinth.outputs.output }}
-    
+        uses: SylvKT/modid-db-sylv@main
