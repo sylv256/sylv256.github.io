@@ -6,7 +6,7 @@ jobs:
   check_modrinth:
     runs-on: ubuntu-latest
     steps:
-      - name: Web Request Action
+      - name: check-modrinth
         uses: Satak/webrequest-action@v1.2.3
         with:
           # Web request URL endpoint
@@ -33,6 +33,5 @@ jobs:
 #           password: # optional
       - name: Print output
         run: |
-          export OUTPUT=${{ steps.webhook.outputs.output }}
-          echo $OUTPUT
+          echo ${{ steps.check-modrinth.outputs.output }}
     
