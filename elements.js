@@ -23,6 +23,7 @@ class PageHeader extends HTMLElement {
 		<header>
 			<nav class="hnav">
 				<a href="/">Home</a>
+				<a href="/contact">Contact</a>
 				<a href="/about">About</a>
 				<a href="/projects">Projects</a>
 				<a href="/system">System</a>
