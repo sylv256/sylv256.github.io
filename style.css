@@ -21,12 +21,58 @@ body {
 }
 
 /* custom elements */
+/*  SYSTEM MEMBER  */
 system-member {
 	width: 500px;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 1em;
 }
+
+system-member>.member-pfp::before {
+	/* vars */
+	--pfp-size: 9em;
+
+	/* set pfp */
+	content: '';
+	background: var(--pfp);
+	background-size: 100%;
+	
+	/* set display, border & width */
+	display: inline-block;
+	border-color: var(--color);
+	width: var(--pfp-size);
+	height: var(--pfp-size);
+	border-radius: 5%;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 0 0 0 3px;
+}
+
+/*   CONTENT   */
+
+system-member .member-content {
+	flex-direction: column;
+}
+
+system-member .member-name::before {
+	content: var(--name);
+}
+
+system-member .member-data {
+	flex-direction: row;
+	font-size: 0.75em;
+}
+
+system-member .member-pronouns::before {
+	content: var(--pronouns);
+}
+
+system-member .member-tag::before {
+	content: '-' var(--member-tag);
+}
+
+/*   *******   */
 
 system-member>* {
 	padding-right: 1em;
@@ -36,25 +82,16 @@ system-member h3 {
 	margin: 0px;
 }
 
+/*  *************  */
+
+/* *************** */
+
 /* classes */
 
 .member-data>p {
 	font-size: medium;
 	padding-right: 1em;
 	margin: 3px 0px 3px 0px;
-}
-
-.pfp>img {
-	width: var(--pfp-size);
-	border-radius: 5%;
-	border-style: solid;
-	border-radius: 10px;
-	border-width: 0 0 0 3px;
-}
-
-.pfp {
-	--pfp-size: 135px;
-	width: var(--pfp-size);
 }
 
 .column {
@@ -129,6 +166,29 @@ a:hover:visited {
 	background-color: #1a1a1a;
 }
 
+/* special effects */
+
+/*  nothing trick  */
+#nothing {
+	display: none;
+}
+
+#nothing:target {
+	display: block;
+}
+/*  *************  */
+
+/*  "empty" link  */
+
+.empty-link, .empty-link:hover, .empty-link:visited:hover, .empty-link:visited {
+	text-decoration: none;
+	color: var(--blue);
+}
+
+/*  ************  */
+
+/* *************** */
+
 /* main shit */
 
 body {
@@ -144,22 +204,15 @@ main {
 }
 
 footer {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: column;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	font-size: medium;
 	background-color: #2a2a2a;
-}
-
-#embed-right {
-	position: fixed;
-	/* top: 25%; */
-	top: 3em;
-	right: 0;
-}
-
-#discord-iframe {
-	margin-right: 1em;
 }
 
 #members {

@@ -9,7 +9,13 @@
 		<script src="/index.js" type="module"></script>
 	</head>
 	<body>
-		<page-header></page-header>
+		<nav class="hnav">
+			<a href="/">Home</a>
+			<a href="/contact">Contact</a>
+			<a href="/about">About</a>
+			<a href="/projects">Projects</a>
+			<a href="/system">System</a>
+		</nav>
 
 		<main class="flex column">
 			<div id="content">
@@ -18,79 +24,359 @@
 				<h2>Members</h2>
 			</div>
 			<div id="members">
-				<system-member name="Alazéa" pronouns="fae/faer" color="#ff719c" member-tag="al">
-					hi
-					sylvgender demigirl
+				<!-- copy-paste this template and fill in the css vars to add new members -->
+				<template id="system-member">
+					<system-member
+						style="
+							--pfp: url(/pfps/);
+							--name: '';
+							--pronouns: '';
+							--color: ;
+							--member-tag: '';
+						"
+					>
+						<div class="member-pfp" title=""></div>
+						<div class="member-content">
+							<h3 class="member-name"></h3>
+							<div class="member-data">
+								<span class="member-pronouns"></span>
+								<span class="member-tag"></span>
+							</div>
+							<div class="member-desc">
+								
+							</div>
+						</div>
+					</system-member>
+				</template>
+				<!-- sysmembers -->
+				<system-member
+					style="
+						--pfp: url(/pfps/Alazéa.png);
+						--name: 'Alazéa';
+						--pronouns: 'fae/faer';
+						--color: #ff719c;
+						--member-tag: 'al';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Alazéa"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							hi<br>
+							sylvgender demigirl
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Alice" pronouns="fae/she" color="#ff006f" member-tag="ali">
-					gay gay sylveon gay
-					(i’m so gay)
-					i love gay i love being gay me is gay
-					me is very stupid too &gt;w&lt;
-					from this country btw: 🏳️‍⚧️
-					sylvgender girl
+				<system-member
+					style="
+						--pfp: url(/pfps/Alice.png);
+						--name: 'Alice';
+						--pronouns: 'fae/she';
+						--color: #ff006f;
+						--member-tag: 'ali';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Alice"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							gay gay sylveon gay<br>
+							(i’m so gay)<br>
+							i love gay i love being gay me is gay<br>
+							me is very stupid too &gt;w&lt;<br>
+							from this country btw: 🏳️‍⚧️<br>
+							sylvgender girl, lesbian
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Azaléa" pronouns="it/its" color="#2090f4">
-					big, fluffy, purring sylveon
-					sylvgender
+				<system-member
+					style="
+						--pfp: url(/pfps/Azaléa.png);
+						--name: 'Azaléa';
+						--pronouns: 'it/its';
+						--color: #2090f4;
+						--member-tag: 'a';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Azaléa"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							big, fluffy, purring sylveon<br>
+							sylvgender
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Davey" pronouns="he/him" color="#f57f00">
-					Hi, I'm Davey. I honestly don't know what I am, but don't we alln't?
-					I'm pan-gay(?) and a silly boy who likes to do silly things.
+				<system-member
+					style="
+						--pfp: url(/pfps/Davey.png);
+						--name: 'Davey';
+						--pronouns: 'he/him';
+						--color: #f57f00;
+						--member-tag: 'd';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Davey"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							Hi, I'm Davey. I honestly don't know what I am, but don't we alln't?<br>
+							I'm pan-gay(?) and a silly boy who likes to do silly things.
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Ella" pronouns="she/her" color="#be1640" member-tag="el">
-					girlboss
-					boys 😳
-					bi, bi lesbian maybe?
+				<system-member
+					style="
+						--pfp: url(/pfps/Ella.png);
+						--name: 'Ella';
+						--pronouns: 'she/her';
+						--color: #be1640;
+						--member-tag: 'el';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Ella"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							girlboss<br>
+							boys 😳<br>
+							bi
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Emma" pronouns="she/her" color="#de03a6">
-					Uh, I don't know.
-					Lesbian Creature?
+				<system-member
+					style="
+						--pfp: url(/pfps/Emma.png);
+						--name: 'Emma';
+						--pronouns: 'she/her';
+						--color: #de03a6;
+						--member-tag: 'e';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Emma"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							Uh, I don't know.<br>
+							Lesbian Creature?
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Ibuprofen" pronouns="they/he" color="#dd6706" pfp-format="jpg">
-					Demi-cis/Gendervoid
-					Pan demi-straight?
-					Genderless creature
+				<system-member
+					style="
+						--pfp: url(/pfps/Ibuprofen.jpg);
+						--name: 'Ibuprofen';
+						--pronouns: 'they/he';
+						--color: #dd6706;
+						--member-tag: 'i';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Ibuprofen"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							Demi-cis/Gendervoid<br>
+							Pan demi-straight?<br>
+							Genderless creature
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Madeline" pronouns="fae/faer" color="#ff00fb">
-					girlqueen girlboss goddess
-					non-biney, obv
-					bigender, girl, demiboy
+				<system-member
+					style="
+						--pfp: url(/pfps/Madeline.png);
+						--name: 'Madeline';
+						--pronouns: 'fae/faer';
+						--color: #ff00fb;
+						--member-tag: 'm';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Madeline"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							girlqueen girlboss goddess<br>
+							non-biney, obv<br>
+							bigender, girl, demiboy
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Max" pronouns="they/them" color="#577a47" member-tag="ma" pfp-format="jpg">
-					agender, meowscarrada kitty otherkin
-					nya~
+				<system-member
+					style="
+						--pfp: url(/pfps/Max.jpg);
+						--name: 'Max';
+						--pronouns: 'they/them';
+						--color: #577a47;
+						--member-tag: 'ma';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Max"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							agender, meowscarrada kitty otherkin<br>
+							nya~
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Nicky" pronouns="he/she" color="#cb1b1b">
-					epic
-					tiny potato supremacy 😎
-					(i think i merged with a new sysmember, oopsie!)
-					demiboy enby genderflux sylvgender (ofc)
-					gaybian (gay-lesbian)
+				<system-member
+					style="
+						--pfp: url(/pfps/Nicky.png);
+						--name: 'Nicky';
+						--pronouns: 'he/she';
+						--color: #cb1b1b;
+						--member-tag: 'n';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Nicky"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							epic<br>
+							tiny potato supremacy 😎<br>
+							demiboy enby genderflux sylvgender (ofc)<br>
+							gaybian (gay-lesbian)
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Oliver" pronouns="he/they" color="#3b99ff">
-					demiboy menace creature sylveon
-					gay creature
-					hi
-					possibly transmascfem
+				<system-member
+					style="
+						--pfp: url(/pfps/Oliver.png);
+						--name: 'Oliver';
+						--pronouns: 'he/they';
+						--color: #3b99ff;
+						--member-tag: 'o';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Oliver"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							demiboy menace creature sylveon<br>
+							gay creature<br>
+							hi<br>
+							possibly transmascfem
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Sarah" pronouns="it/fae/she" color="#4622f1">
-					xd sylveon go purrrrrr
-					sylvgender demigirl
-					lesbian
+				<system-member
+					style="
+						--pfp: url(/pfps/Sarah.png);
+						--name: 'Sarah';
+						--pronouns: 'it/fae/she';
+						--color: #4622f1;
+						--member-tag: 's';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Sarah"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							xd sylveon go purrrrrr<br>
+							sylvgender demigirl<br>
+							lesbian
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Sylv" pronouns="syl/sylv/sylv's/sylv's/sylvself" color="#e31c97" member-tag="sy">
-					sylvgender
-					sylveon &lt;3
+				<system-member
+					style="
+						--pfp: url(/pfps/Sylv.png);
+						--name: 'Sylv';
+						--pronouns: 'syl/sylv/sylv\'s/sylv\'s/sylvself';
+						--color: #e31c97;
+						--member-tag: 'sy';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Sylv"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							sylvgender<br>
+							sylveon &lt;3
+						</div>
+					</div>
 				</system-member>
-				<system-member name="Xavier" pronouns="he/him" color="#35e641">
-					hi, i guess
-					lesboy?
+				<system-member
+					style="
+						--pfp: url(/pfps/Xavier.png);
+						--name: 'Xavier';
+						--pronouns: 'he/him';
+						--color: #35e641;
+						--member-tag: 'x';
+					"
+				>
+					<div class="member-pfp" title="Avatar of Xavier"></div>
+					<div class="member-content">
+						<h3 class="member-name"></h3>
+						<div class="member-data">
+							<span class="member-pronouns"></span>
+							<span class="member-tag"></span>
+						</div>
+						<div class="member-desc">
+							hi, i guess
+							lesboy?
+						</div>
+					</div>
 				</system-member>
 			</div>
 			<br><p><i>under constructio</i></p>
 		</main>
-
-		<page-footer></page-footer>
+		
+		<footer>
+			<p>© 2023 Sylv</p>
+			<p>Powered by <a class="empty-link" href="#nothing">Nothing</a></p>
+			<p id="nothing">...except HTML/CSS. There are no frameworks, no JavaScript, and no libraries; not even for this! <sub><strike>the "nothing" trick was shamelessly stolen from <a href="http://lemmaeof.gay">LemmaEOF</a></strike></sub></p>
+		</footer>
 	</body>
 </html>
