@@ -11,11 +11,15 @@
 	</head>
 	<body>
 		<nav class="hnav">
-			<a href="/">Home</a>
-			<a href="/contact">Contact</a>
-			<a href="/about">About</a>
-			<a href="/projects">Projects</a>
-			<a href="/system">System</a>
+			<input type="checkbox" id="nav-burger-checkbox">
+			<label for="nav-burger-checkbox"></label>
+			<div id="nav-screen">
+				<a class="nav-link" href="/">Home</a>
+				<a class="nav-link" href="/contact">Contact</a>
+				<a class="nav-link" href="/about">About</a>
+				<a class="nav-link" href="/projects">Projects</a>
+				<a class="nav-link" href="/system">System</a>
+			</div>
 		</nav>
 
 		<main>
@@ -26,13 +30,13 @@
 			</div>
 			<div id="members">
 				<!-- copy-paste this template and fill in the css vars to add new members -->
-				<template id="system-member">
+				<template id="system-member-template">
 					<system-member
 						style="
 							--pfp: url(/pfps/);
 							--name: '';
 							--pronouns: '';
-							--color: ;
+							--icon-color: ;
 							--member-tag: '';
 						"
 					>
@@ -55,7 +59,7 @@
 						--pfp: url(/pfps/Alazéa.png);
 						--name: 'Alazéa';
 						--pronouns: 'fae/faer';
-						--color: #ff719c;
+						--icon-color: #ff719c;
 						--member-tag: 'al';
 					"
 				>
@@ -77,7 +81,7 @@
 						--pfp: url(/pfps/Alice.png);
 						--name: 'Alice';
 						--pronouns: 'fae/she';
-						--color: #ff006f;
+						--icon-color: #ff006f;
 						--member-tag: 'ali';
 					"
 				>
@@ -103,7 +107,7 @@
 						--pfp: url(/pfps/Azaléa.png);
 						--name: 'Azaléa';
 						--pronouns: 'it/its';
-						--color: #2090f4;
+						--icon-color: #2090f4;
 						--member-tag: 'a';
 					"
 				>
@@ -125,7 +129,7 @@
 						--pfp: url(/pfps/Davey.png);
 						--name: 'Davey';
 						--pronouns: 'he/him';
-						--color: #f57f00;
+						--icon-color: #f57f00;
 						--member-tag: 'd';
 					"
 				>
@@ -147,7 +151,7 @@
 						--pfp: url(/pfps/Ella.png);
 						--name: 'Ella';
 						--pronouns: 'she/her';
-						--color: #be1640;
+						--icon-color: #be1640;
 						--member-tag: 'el';
 					"
 				>
@@ -170,7 +174,7 @@
 						--pfp: url(/pfps/Emma.png);
 						--name: 'Emma';
 						--pronouns: 'she/her';
-						--color: #de03a6;
+						--icon-color: #de03a6;
 						--member-tag: 'e';
 					"
 				>
@@ -192,7 +196,7 @@
 						--pfp: url(/pfps/Ibuprofen.jpg);
 						--name: 'Ibuprofen';
 						--pronouns: 'they/he';
-						--color: #dd6706;
+						--icon-color: #dd6706;
 						--member-tag: 'i';
 					"
 				>
@@ -215,7 +219,7 @@
 						--pfp: url(/pfps/Madeline.png);
 						--name: 'Madeline';
 						--pronouns: 'fae/faer';
-						--color: #ff00fb;
+						--icon-color: #ff00fb;
 						--member-tag: 'm';
 					"
 				>
@@ -238,7 +242,7 @@
 						--pfp: url(/pfps/Max.jpg);
 						--name: 'Max';
 						--pronouns: 'they/them';
-						--color: #577a47;
+						--icon-color: #577a47;
 						--member-tag: 'ma';
 					"
 				>
@@ -260,7 +264,7 @@
 						--pfp: url(/pfps/Nicky.png);
 						--name: 'Nicky';
 						--pronouns: 'he/she';
-						--color: #cb1b1b;
+						--icon-color: #cb1b1b;
 						--member-tag: 'n';
 					"
 				>
@@ -284,7 +288,7 @@
 						--pfp: url(/pfps/Oliver.png);
 						--name: 'Oliver';
 						--pronouns: 'he/they';
-						--color: #3b99ff;
+						--icon-color: #3b99ff;
 						--member-tag: 'o';
 					"
 				>
@@ -308,7 +312,7 @@
 						--pfp: url(/pfps/Sarah.png);
 						--name: 'Sarah';
 						--pronouns: 'it/fae/she';
-						--color: #4622f1;
+						--icon-color: #4622f1;
 						--member-tag: 's';
 					"
 				>
@@ -331,7 +335,7 @@
 						--pfp: url(/pfps/Sylv.png);
 						--name: 'Sylv';
 						--pronouns: 'syl/sylv/sylv\'s/sylv\'s/sylvself';
-						--color: #e31c97;
+						--icon-color: #e31c97;
 						--member-tag: 'sy';
 					"
 				>
@@ -353,7 +357,7 @@
 						--pfp: url(/pfps/Xavier.png);
 						--name: 'Xavier';
 						--pronouns: 'he/him';
-						--color: #35e641;
+						--icon-color: #35e641;
 						--member-tag: 'x';
 					"
 				>

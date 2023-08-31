@@ -13,9 +13,12 @@
 	--dark-yellow: rgb(50.71% 47.13% 0%);
 	--dark-red: rgb(71.35% 35.62% 33.23%);
 
-	--navbar-bg: #202020;
-	--navbar-link: #9b9b9b;
-	--navbar-hover-link-bg: #1a1a1a;
+	--nav-bg: #202020;
+	--nav-link: #9b9b9b;
+	--nav-hover-link-bg: #1a1a1a;
+
+	--icon-size: 12.5ch;
+	--icon-color: #9b9b9b;
 }
 
 body {
@@ -25,29 +28,89 @@ body {
 }
 
 /* custom elements */
+/*  Project  */
+project {
+	display: flex;
+	margin-bottom: 1ch;
+}
+
+/*make width work properly on small displays & big ones*/
+@media (min-width: 500px) {
+	project {
+		width: 500px;
+		flex-direction: row;
+	}
+}
+@media not (min-width: 500px) {
+	project {
+		width: 100%;
+		flex-direction: column;
+	}
+}
+
+project>.project-icon::before {
+	/* set pfp */
+	content: '';
+	background: var(--icon);
+	background-size: 100%;
+	
+	/* set display, border & width */
+	display: inline-block;
+	border-color: var(--icon-color);
+	width: var(--icon-size);
+	height: var(--icon-size);
+	border-radius: 5%;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 0 0 0 3px;
+}
+
+project .project-info {
+	display: flex;
+	flex-direction: column;
+}
+
+project .project-name::before {
+	content: var(--name);
+}
+
+project .project-data {
+	display: flex;
+	flex-direction: row;
+	font-size: 0.75em;
+}
+
+project>* {
+	padding-right: 0.25em;
+}
+
+project h3 {
+	margin: 0px;
+}
+
+/* ******* */
+
 /*  SYSTEM MEMBER  */
 system-member {
 	display: flex;
-	flex-direction: row;
-	margin-bottom: 1vh;
+	margin-bottom: 1ch;
 }
 
 /*make width work properly on small displays & big ones*/
 @media (min-width: 500px) {
 	system-member {
 		width: 500px;
+		flex-direction: row;
 	}
 }
 @media not (min-width: 500px) {
 	system-member {
-		width: 100%
+		width: 100%;
+		flex-direction: column;
 	}
 }
 
 system-member>.member-pfp::before {
-	/* vars */
-	--pfp-size: 25vmin;
-	
 	/* set pfp */
 	content: '';
 	background: var(--pfp);
@@ -55,9 +118,9 @@ system-member>.member-pfp::before {
 	
 	/* set display, border & width */
 	display: inline-block;
-	border-color: var(--color);
-	width: var(--pfp-size);
-	height: var(--pfp-size);
+	border-color: var(--icon-color);
+	width: var(--icon-size);
+	height: var(--icon-size);
 	border-radius: 5%;
 	border-style: solid;
 	border-radius: 10px;
@@ -67,6 +130,7 @@ system-member>.member-pfp::before {
 /*   CONTENT   */
 
 system-member .member-content {
+	display: flex;
 	flex-direction: column;
 }
 
@@ -75,7 +139,6 @@ system-member .member-name::before {
 }
 
 system-member .member-data {
-	flex-direction: row;
 	font-size: 0.75em;
 }
 
@@ -90,7 +153,7 @@ system-member .member-tag::before {
 /*   *******   */
 
 system-member>* {
-	padding-right: 1em;
+	padding-right: 0.5em;
 }
 
 system-member h3 {
@@ -169,40 +232,70 @@ a:visited {
 
 /* ***** */
 
-/* navbar */
+/* navigation */
 
 .hnav {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
-	display: flex;
-	overflow: hidden;
-	background-color: var(--navbar-bg);
+	background-color: var(--nav-bg);
 }
 
-.hnav a {
+#nav-screen {
+	display: flex;
+	flex-direction: row;
+}
+
+#nav-screen .nav-link {
 	padding: 10px 8px;
 	text-decoration: none;
-	color: var(--navbar-link);
+	color: var(--nav-link);
 	font-size: x-large;
 }
 
 @media (any-hover) {
-	.hnav a:hover {
-		color: var(--navbar-link);
+	#nav-screen .nav-link:hover {
+		color: var(--nav-link);
 	}
 	
-	.hnav a:hover {
-		background-color: var(--navbar-hover-link-bg);
+	#nav-screen .nav-link:hover {
+		background-color: var(--nav-hover-link-bg);
 	}
 }
 
 /*basic click effect for links on mobile*/
 @media not (any-hover) {
-	.hnav a:active, .hnav a:active:after {
-		color: var(--navbar-link);
-		background-color: var(--navbar-hover-link-bg);
+	#nav-screen .nav-link:active, #nav-screen .nav-link:active:after {
+		color: var(--nav-link);
+		background-color: var(--nav-hover-link-bg);
+	}
+}
+
+/*toggle nav menu for mobile*/
+#nav-burger-checkbox {
+	display: none;
+}
+@media not (min-width: 768px) {
+	#nav-burger-checkbox + label {
+		display: inline-block;
+		width: 10vw;
+		height: 5vh;
+		content: url(/navburger.svg);
+	}
+
+	#nav-burger-checkbox ~ #nav-screen {
+		display: none;
+	}
+
+	#nav-burger-checkbox:checked ~ #nav-screen {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media (min-width: 768px) {
+	#nav-burger-checkbox + label {
+		display: none;
 	}
 }
 
