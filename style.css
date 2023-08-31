@@ -12,6 +12,10 @@
 	--dark-green: rgb(18.19% 52.87% 31.36%);
 	--dark-yellow: rgb(50.71% 47.13% 0%);
 	--dark-red: rgb(71.35% 35.62% 33.23%);
+
+	--navbar-bg: #202020;
+	--navbar-link: #9b9b9b;
+	--navbar-hover-link-bg: #1a1a1a;
 }
 
 body {
@@ -150,6 +154,17 @@ a:hover:visited {
 	color: var(--dark-red);
 }
 
+/*basic click effect for links on mobile*/
+@media not (any-hover) {
+	a:active, a:active:after {
+		color: var(--red);
+	}
+
+	a:active:visited, a:active:visited:after {
+		color: var(--dark-red);
+	}
+}
+
 p {
 	margin-left: 1vw;
 	margin-right: 1vw;
@@ -166,22 +181,30 @@ p {
 	width: 100vw;
 	display: flex;
 	overflow: hidden;
-	background-color: #202020;
+	background-color: var(--navbar-bg);
 }
 
 .hnav a {
 	padding: 10px 8px;
 	text-decoration: none;
-	color: #9b9b9b;
+	color: var(--navbar-link);
 	font-size: x-large;
 }
 
 .hnav a:hover {
-	color: #9b9b9b;
+	color: var(--navbar-link);
 }
 
 .hnav a:hover {
-	background-color: #1a1a1a;
+	background-color: var(--navbar-hover-link-bg);
+}
+
+/*basic click effect for links on mobile*/
+@media not (any-hover) {
+	.hnav a:active, .hnav a:active:after {
+		color: var(--navbar-link);
+		background-color: var(--navbar-hover-link-bg);
+	}
 }
 
 /* special effects */
