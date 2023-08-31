@@ -81,7 +81,7 @@ project .project-data {
 }
 
 project>* {
-	padding-right: 0.25em;
+	padding-right: 0.5em;
 }
 
 project h3 {
