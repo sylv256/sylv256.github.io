@@ -146,12 +146,14 @@ a:visited {
 	color: var(--dark-blue);
 }
 
-a:hover {
-	color: var(--red);
-}
-
-a:hover:visited {
-	color: var(--dark-red);
+@media (any-hover) {
+	a:hover {
+		color: var(--red);
+	}
+	
+	a:hover:visited {
+		color: var(--dark-red);
+	}
 }
 
 /*basic click effect for links on mobile*/
@@ -186,12 +188,14 @@ a:hover:visited {
 	font-size: x-large;
 }
 
-.hnav a:hover {
-	color: var(--navbar-link);
-}
-
-.hnav a:hover {
-	background-color: var(--navbar-hover-link-bg);
+@media (any-hover) {
+	.hnav a:hover {
+		color: var(--navbar-link);
+	}
+	
+	.hnav a:hover {
+		background-color: var(--navbar-hover-link-bg);
+	}
 }
 
 /*basic click effect for links on mobile*/
