@@ -23,10 +23,21 @@ body {
 /* custom elements */
 /*  SYSTEM MEMBER  */
 system-member {
-	width: 500px;
 	display: flex;
 	flex-direction: row;
 	margin-bottom: 1vh;
+}
+
+/*make width work properly on small displays & big ones*/
+@media (min-width: 500px) {
+	system-member {
+		width: 500px;
+	}
+}
+@media not (min-width: 500px) {
+	system-member {
+		width: 100%
+	}
 }
 
 system-member>.member-pfp::before {
