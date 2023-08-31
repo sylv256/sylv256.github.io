@@ -160,7 +160,7 @@ a:hover:visited {
 		color: var(--red);
 	}
 
-	a:active:visited, a:active:visited:after {
+	a:visited:active, a:visited:active:after {
 		color: var(--dark-red);
 	}
 }
