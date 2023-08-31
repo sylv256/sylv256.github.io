@@ -26,13 +26,13 @@ system-member {
 	width: 500px;
 	display: flex;
 	flex-direction: row;
-	margin-bottom: 1em;
+	margin-bottom: 1vh;
 }
 
 system-member>.member-pfp::before {
 	/* vars */
-	--pfp-size: 9em;
-
+	--pfp-size: 25vmin;
+	
 	/* set pfp */
 	content: '';
 	background: var(--pfp);
@@ -121,7 +121,7 @@ system-member h3 {
 	font-style: italic;
 }
 
-/* links */
+/* nodes */
 
 a {
 	color: var(--blue);
@@ -139,13 +139,20 @@ a:hover:visited {
 	color: var(--dark-red);
 }
 
+p {
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+/* ***** */
+
 /* navbar */
 
 .hnav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	overflow: hidden;
 	background-color: #202020;
@@ -191,16 +198,29 @@ a:hover:visited {
 
 /* main shit */
 
-body {
+html, body {
 	padding: 0;
 	margin: 0;
-	min-height: 100%;
+	height: 100%;
+	line-height: 1.4;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 main {
 	padding: 2em;
 	font-size: 16px;
 	margin-bottom: 2em;
+	flex: 1 0 auto;
+}
+
+p {
+	/* max character length before wrapping */
+	max-width: 80ch;
 }
 
 footer {
@@ -208,9 +228,7 @@ footer {
 	flex-wrap: wrap;
 	align-items: center;
 	flex-direction: column;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+	width: 100vw;
 	font-size: medium;
 	background-color: #2a2a2a;
 }
@@ -223,5 +241,6 @@ footer {
 	justify-content: space-between;
 	align-content: flex-start;
 	align-items: flex-start;
-	row-gap: 30px;
+	row-gap: 2vh;
+	max-inline-size: 100%;
 }
