@@ -3,6 +3,6 @@ layout: default
 ---
 
 <h1>{{ page.title | smartify }}</h1>
-<sub>{{ page.date | date: "%-d %B %Y %H:%M:%S" }} - <i>{{ page.author | smartify }}</i></sub>
+<sub>{{ page.date | date: site.theme_config.date_format }} - <i>{{ page.author | smartify }}</i></sub>
 
 {{ content | smartify }}

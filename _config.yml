@@ -26,6 +26,10 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sylv.gay" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: SylvKT
 favicon: icon_128.png
+timezone: America/New_York
+
+theme_config:
+  date_format: "%-d %B %Y %H:%M:%S %Z"
 
 # Build settings
 remote_theme: https://github.com/riggraz/no-style-please
