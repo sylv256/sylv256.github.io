@@ -4,6 +4,7 @@
 
 title: Sylveon Dimension
 layout: home
+permalink: /
 ---
 
 helo and welcome to the sylveon dimension

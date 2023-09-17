@@ -1,5 +1,6 @@
 ---
 title: Vulpixel
+permalink: /vulpixel/
 ---
 
 # Vulpixel

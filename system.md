@@ -1,5 +1,6 @@
 ---
 title: System
+permalink: /system/
 ---
 
 # System
