@@ -334,7 +334,7 @@ a:visited {
 	background-color: var(--code-bg);
 	padding: 0.125vw;
 	border-radius: 8px;
-	max-width: 80ch;
+	overflow-wrap: break-word;
 }
 
 .prism-break-all>code.language-plaintext.highlighter-rouge {
