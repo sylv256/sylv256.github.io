@@ -19,9 +19,9 @@ keywords:
 ---
 
 `testing123asdfffffffsadfsadfadsfsdaavczvzxcve52345234*(U@(*!J(f890djsjaf9jsa0dfj89j)))`
+{: .prism-break-all}
 
 `testing123asdfffffffsadfsadfadsfsdaavczvzxcve52345234*(U@(*!J(f890djsjaf9jsa0dfj89j)))`
-{: .prism-no-break-all}
 
 `testing abc`
 {: .prism-bg}
