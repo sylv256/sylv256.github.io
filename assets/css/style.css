@@ -370,6 +370,9 @@ html, body {
 	margin: 0;
 	height: 100%;
 	line-height: 1.4;
+
+	/*dirty hack for windows-only issue*/
+	/*thanks windows*/
 	max-width: 100%;
 	overflow-x: hidden;
 }
