@@ -50,6 +50,7 @@ defaults:
     scope:
       path: "*.md"
     values:
+      permalink: /:title/
       layout: default
 
 
