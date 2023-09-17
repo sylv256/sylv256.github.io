@@ -330,16 +330,34 @@ a:visited {
 
 /* code styling */
 
-code {
+:not(.prism-bg)>code.language-plaintext.highlighter-rouge {
 	background-color: var(--code-bg);
 	padding: 0.125vw;
+	border-radius: 8px;
+	max-width: 80ch;
+}
+
+:not(.prism-no-break-all)>code.language-plaintext.highlighter-rouge {
+	word-break: break-all;
+}
+
+.prism-break pre[class*="language-"]>code[class*="language-"] {
+	overflow-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+:not(.prism-bg)>pre[class*="language-"] {
+	background-color: var(--code-bg);
+	padding: 1em;
 	border-radius: 8px;
 }
 
 pre {
-	background-color: var(--code-bg);
-	padding: 0.125vw;
-	border-radius: 8px;
+	max-width: 80ch;
+}
+
+.code-toolbar {
+	z-index: 0;
 }
 
 /* ************ */
@@ -384,6 +402,10 @@ footer {
 footer p {
 	margin-left: 1vw;
 	margin-right: 1vw;
+}
+
+nav {
+	z-index: 1;
 }
 
 #members {
