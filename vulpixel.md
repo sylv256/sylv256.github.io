@@ -1,6 +1,7 @@
 ---
 title: Vulpixel
 permalink: /vulpixel/
+description: A queer-friendly Minecraft modding group!
 ---
 
 # Vulpixel
