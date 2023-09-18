@@ -31,10 +31,6 @@ timezone: America/New_York
 theme_config:
   date_format: "%-d %B %Y %H:%M:%S %Z"
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-
 # Build settings
 remote_theme: https://github.com/riggraz/no-style-please
 plugins:
