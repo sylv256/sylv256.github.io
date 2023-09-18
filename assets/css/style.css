@@ -17,6 +17,7 @@
 	--dark-red: rgb(71.35% 35.62% 33.23%);
 
 	--code-bg: #3A3A3A;
+	--code-color: #ccc;
 
 	--nav-bg: #202020;
 	--nav-link: #9b9b9b;
@@ -284,8 +285,8 @@ a:visited {
 @media not (min-width: 768px) {
 	#nav-burger-checkbox + label {
 		display: inline-block;
-		width: 10vw;
-		height: 5vh;
+		width: 3.25em;
+		height: 3.25em;
 		content: url(/navburger.svg);
 	}
 
@@ -330,14 +331,15 @@ a:visited {
 
 /* code styling */
 
-:not(.prism-bg)>code.language-plaintext.highlighter-rouge {
+:not(.prism-bg)>code.highlighter-rouge {
 	background-color: var(--code-bg);
 	padding: 0.125vw;
 	border-radius: 8px;
 	overflow-wrap: break-word;
+	color: var(--code-color);
 }
 
-.prism-break-all>code.language-plaintext.highlighter-rouge {
+.prism-break-all>code.highlighter-rouge {
 	word-break: break-all;
 }
 
@@ -361,6 +363,31 @@ pre {
 }
 
 /* ************ */
+
+
+/* pagination */
+
+.pagination {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+
+.pagination>.next-page {
+	margin-left: auto;
+}
+
+.pagination>.next-page, .pagination>.previous-page {
+	position: relative;
+	background-color: var(--code-bg);
+	padding: 0.5em;
+	border-radius: 6px;
+	width: 14ch;
+	text-align: center;
+}
+
+/* ********** */
 
 
 /* main shit */
@@ -388,7 +415,12 @@ main {
 	font-size: 16px;
 	margin-bottom: 2em;
 	flex: 1 0 auto;
+	
+	/* so we don't overflow on small-width screens */
+	max-width: 95vw;
+}
 
+main>* {
 	/* max character length before wrapping */
 	max-width: 80ch;
 }

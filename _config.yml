@@ -27,6 +27,9 @@ url: "https://sylv.gay" # the base hostname & protocol for your site, e.g. http:
 github_username: SylvKT
 favicon: icon_128.png
 timezone: America/New_York
+paginate: 5
+markdown: kramdown
+paginate_path: "/blog/page:num/"
 
 theme_config:
   date_format: "%-d %B %Y %H:%M:%S %Z"
@@ -45,6 +48,7 @@ defaults:
       path: ""
       type: "posts"
     values:
+      permalink: /blog/:categories/:year/:month/:day/:slug/
       author: "Sylv"
   -
     scope:

@@ -1,6 +1,21 @@
-<div id="pagination">
-	<a id="previous-page">
-		Previous page<br>
-		{{ page.title }}
+<div class="pagination">
+	{% if paginator.previous_page %}
+		<a class="previous-page" href="{{ paginator.previous_page_path }}">
+			Previous ({{ paginator.previous_page }})
+		</a>
+	{% else %}
+		<span class="previous-page">
+			Previous
+		</span>
+	{% endif %}
+
+	{% if paginator.next_page %}
+	<a class="next-page" href="{{ paginator.next_page_path }}">
+		Next ({{ paginator.next_page }})
 	</a>
+	{% else %}
+		<span class="next-page">
+			Next
+		</span>
+	{% endif %}
 </div>

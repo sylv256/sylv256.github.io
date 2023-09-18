@@ -1,18 +1,18 @@
-{%-if include.category-%}
-	{%-assign posts = site.categories[include.category]-%}  
+<!-- {%-if include.category-%}
+	%-assign posts = site.categories[include.category]-%
 {%-else-%}
-	{%-assign posts = site.posts-%}
-{%-endif-%}
+	%-assign posts = site.posts-%
+{%-endif-%} -->
 
-{%-if include.limit and posts.size > include.limit-%}
+{%-if include.limit and paginator.posts.size > include.limit-%}
 	{%-assign limit_exceeded = true-%}
 {%-else-%}
 	{%-assign limit_exceeded = false-%}
 {%-endif-%}
 
-{%- if posts.size > 0 -%}
+{%- if paginator.posts.size > 0 -%}
 	<div id="posts">
-		{%- for post in posts limit: include.limit -%}
+		{%- for post in paginator.posts limit: include.limit -%}
 			<div class="post">
 				<h2><a href="{{ post.url | relative_url }}">{{ post.title | smartify }}</a></h2>
 				<h3>{{- post.date | date: site.theme_config.date_format -}}</h3>
