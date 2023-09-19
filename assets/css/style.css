@@ -385,6 +385,11 @@ pre {
 	border-radius: 6px;
 	width: 14ch;
 	text-align: center;
+	cursor: default;
+}
+
+.pagination>a.next-page, .pagination>a.previous-page {
+	cursor: pointer;
 }
 
 /* ********** */
