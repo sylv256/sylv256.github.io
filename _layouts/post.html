@@ -3,6 +3,8 @@ layout: default
 ---
 
 <h1>{{ page.title | smartify }}</h1>
+{%- assign post = page -%}
+{%- include tags-categories.html -%}
 <sub>{{ page.date | date: site.theme_config.date_format }} - <i>{{ page.author | smartify }}</i></sub>
 
 {{ content | smartify }}

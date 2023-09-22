@@ -18,6 +18,7 @@
 
 	--code-bg: #3A3A3A;
 	--code-color: #ccc;
+	--alt-code-color: #ababab;
 
 	--nav-bg: #202020;
 	--nav-link: #9b9b9b;
@@ -393,6 +394,36 @@ pre {
 }
 
 /* ********** */
+
+/* blog posts page */
+
+.post-tags, .post-categories {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 4px;
+}
+
+.post-tags>span, .post-categories>span {
+	/*spacing*/
+	margin-bottom: 4px;
+	margin-right: 0.5em;
+
+	/*styling inside padding*/
+	background-color: var(--code-bg);
+	color: var(--alt-code-color);
+	padding: 3px;
+}
+
+.post-tags>span {
+	border-radius: 8px;
+}
+
+.post-categories>span {
+	border-radius: 16px
+}
+
+/* *************** */
 
 
 /* main shit */

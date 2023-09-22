@@ -1,0 +1,10 @@
+<div class="post-categories">
+	{%- for category in post.categories -%}
+		<span>{{ category }}</span>
+	{%- endfor -%}
+</div>
+<div class="post-tags">
+	{%- for tag in post.tags -%}
+		<span>#{{ tag }}</span>
+	{%- endfor -%}
+</div>
