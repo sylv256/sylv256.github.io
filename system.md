@@ -1,12 +1,14 @@
 ---
 title: System
 permalink: /system/
+unlimited-width: true
 ---
 
 # System
 *descriptions are work in progress*
 
 ## Members
+{: #members-heading}
 
 <div id="members">
 <!-- copy-paste this template and fill in the css vars to add new members -->
