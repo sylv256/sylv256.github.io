@@ -491,7 +491,7 @@ main {
 	max-width: 95vw;
 }
 
-main>* {
+main {
 	/* max character length before wrapping */
 	max-width: var(--max-width);
 }
