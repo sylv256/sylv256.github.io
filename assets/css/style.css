@@ -371,7 +371,6 @@ pre {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	width: 100%;
 }
 
 .pagination>.next-page {
@@ -484,14 +483,14 @@ h1, h2, h3, h4, h5, h6 {
 
 main {
 	/*display*/
-	padding: 2em;
+	padding-top: 2em;
 	margin-bottom: 2em;
 	flex: 1 0 auto;
 	/* so we don't overflow on small-width screens */
 	max-width: 95vw;
 }
 
-main {
+main>* {
 	/* max character length before wrapping */
 	max-width: var(--max-width);
 }
