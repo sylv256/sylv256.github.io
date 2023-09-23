@@ -48,6 +48,11 @@
           "choices": [
             "new blog"
           ]
+        },
+        {
+          "title": "author",
+          "name": "author",
+          "type": "string"
         }
       ]
     }
@@ -67,9 +72,9 @@
   ],
   "frontMatter.dashboard.openOnStart": true,
   "frontMatter.content.draftField": {
-      "invert": true,
-      "name": "published",
-      "type": "boolean"
+    "invert": true,
+    "name": "published",
+    "type": "boolean"
   },
   "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --drafts"
 }
