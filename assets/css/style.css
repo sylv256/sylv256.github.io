@@ -39,7 +39,6 @@ html, body {
 	padding: 0;
 	margin: 0;
 	height: 100%;
-	line-height: 1.4;
 
 	/*dirty hack for windows-only issue*/
 	/*thanks windows*/
@@ -77,11 +76,6 @@ main {
 
 /*go to /assets/css/max-width.css for the max-width definition on >650px*/
 
-main>* {
-	/* max character length before wrapping */
-	max-width: var(--max-width);
-}
-
 h1, h2, h3, h4, h5, h6 {
 	/*font*/
 	line-height: var(--heading-line-height);
@@ -104,6 +98,8 @@ footer p {
 nav {
 	z-index: 1;
 }
+
+/* ********* */
 
 /* custom elements */
 /*  Project  */

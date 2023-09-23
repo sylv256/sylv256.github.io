@@ -1,6 +1,6 @@
 @media (min-width: 650px) {
 	main {
-		/* makes it so there isn't awkward unused space */
+		/* max character length before wrapping */
 		max-width: var(--max-width);
 	}
 }
