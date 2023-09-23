@@ -59,6 +59,17 @@
     {
       "title": "_posts",
       "path": "[[workspace]]/_posts"
+    },
+    {
+      "title": "_drafts",
+      "path": "[[workspace]]/_drafts"
     }
-  ]
+  ],
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.content.draftField": {
+      "invert": true,
+      "name": "published",
+      "type": "boolean"
+  },
+  "frontMatter.framework.startCommand": "bundle exec jekyll serve --livereload --drafts"
 }
