@@ -30,7 +30,7 @@
 	--nav-link: #9b9b9b;
 	--nav-hover-link-bg: #1a1a1a;
 
-	--icon-size: 7.5em;
+	--icon-size: 128px;
 	--icon-color: #9b9b9b;
 }
 
@@ -174,7 +174,7 @@ system-member h3 {
 /* classes */
 
 .member-data>p {
-	font-size: medium;
+	font-size: 1em;
 	padding-right: 1em;
 	margin: 3px 0px 3px 0px;
 }
@@ -502,7 +502,7 @@ footer {
 	align-items: center;
 	flex-direction: column;
 	width: 100vw;
-	font-size: medium;
+	font-size: 0.75em;
 	background-color: #2a2a2a;
 }
 footer p {
