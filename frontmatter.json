@@ -53,6 +53,11 @@
           "title": "author",
           "name": "author",
           "type": "string"
+        },
+        {
+          "title": "published",
+          "name": "published",
+          "type": "datetime"
         }
       ]
     }
