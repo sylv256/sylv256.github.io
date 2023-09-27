@@ -11,7 +11,6 @@ categories:
   - opinion
 keywords:
   - trans
-  - love
 ---
 
 ## Introduction
