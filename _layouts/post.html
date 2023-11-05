@@ -7,4 +7,6 @@ layout: default
 {%- include tags-categories.html -%}
 <sub>{{ page.date | date: site.theme_config.date_format }} - <i>{{ page.author | smartify }}</i></sub>
 
-{{ content | smartify }}
+<article>
+    {{ content | smartify }}
+</article>
