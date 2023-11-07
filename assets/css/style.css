@@ -506,7 +506,6 @@ pre {
 
 .post-description {
 	margin-top: 7px;
-	margin-bottom: 30px;
 }
 
 .post-description * {
@@ -515,6 +514,10 @@ pre {
 
 .post-description>span {
 	font-size: medium;
+}
+
+.last.post-description {
+	margin-bottom: 37px;
 }
 
 
