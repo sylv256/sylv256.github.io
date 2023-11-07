@@ -1,10 +1,10 @@
-<div class="post-categories">
+<div class="post-categories" aria-label="Post Categories" role="list">
 	{%- for category in post.categories -%}
-		<span>{{ category }}</span>
+		<span role="listitem">{{ category }}</span>
 	{%- endfor -%}
 </div>
-<div class="post-tags">
+<div class="post-tags" aria-label="Post Tags" role="list">
 	{%- for tag in post.tags -%}
-		<span>#{{ tag }}</span>
+		<span role="listitem">#{{ tag }}</span>
 	{%- endfor -%}
 </div>

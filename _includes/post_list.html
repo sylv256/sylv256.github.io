@@ -11,13 +11,23 @@
 {%-endif-%}
 
 {%- if paginator.posts.size > 0 -%}
-	<div id="posts">
+	<div id="posts" role="list" aria-label="Posts">
 		{%- for post in paginator.posts limit: include.limit -%}
-			<div class="post">
+			<div class="post" role="listitem" aria-label="Post">
 				<h2><a href="{{ post.url | relative_url }}">{{ post.title | smartify }}</a></h2>
 				{%- include tags-categories.html -%}
-				<h3>{{- post.date | date: site.theme_config.date_format -}}</h3>
-				<h4><i>{{ post.author | smartify }}</i> - {{ post.description | smartify }}</h4>
+				<div class="post-description">
+					<span id="date">Date</span>
+					<h3 aria-describedby="date">{{- post.date | date: site.theme_config.date_format -}}</h3>
+				</div>
+				<div class="post-description">
+					<span id="author">Author</span>
+					<h4 aria-describedby="author"><i>{{ post.author | smartify }}</i></h4>
+				</div>
+				<div class="post-description">
+					<span id="description">Description</span>
+					<h4 aria-describedby="description">{{ post.description | smartify }}</h4>
+				</div>
 				<p>{{ post.excerpt | smartify }}</p>
 			</div>
 		{%- endfor -%}
