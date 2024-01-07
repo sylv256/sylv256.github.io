@@ -108,6 +108,51 @@ unlimited-width: true
 </system-member>
 <system-member
 	style="
+		--pfp: url(/pfps/Caroline.png);
+		--name: 'Caroline';
+		--pronouns: 'she/her';
+		--icon-color: #d08721;
+		--member-tag: 'c';
+	"
+>
+	<div class="member-pfp" title="Avatar of Caroline"></div>
+	<div class="member-content">
+		<h3 class="member-name"></h3>
+		<div class="member-data">
+			<span class="member-pronouns"></span>
+			<span class="member-tag"></span>
+		</div>
+		<div class="member-desc">
+			portal 3 coming soon 2022<br>
+			demigirl<br>
+			hi<br>
+			(dormant)
+		</div>
+	</div>
+</system-member>
+<system-member
+	style="
+		--pfp: url(/pfps/creature.png);
+		--name: 'creature';
+		--pronouns: 'it/its';
+		--icon-color: #777777;
+		--member-tag: 'cr';
+	"
+>
+	<div class="member-pfp" title="Avatar of creature"></div>
+	<div class="member-content">
+		<h3 class="member-name"></h3>
+		<div class="member-data">
+			<span class="member-pronouns"></span>
+			<span class="member-tag"></span>
+		</div>
+		<div class="member-desc">
+			creature computer virus liminal thing
+		</div>
+	</div>
+</system-member>
+<system-member
+	style="
 		--pfp: url(/pfps/Davey.png);
 		--name: 'Davey';
 		--pronouns: 'he/him';

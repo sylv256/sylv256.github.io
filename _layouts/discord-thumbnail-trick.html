@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Thumbnail -->
+        <meta property="og:image" content="{{ page.thumbnail }}">
+        <meta property="og:type" content="video.other">
+
+        <!-- Video -->
+        <meta property="og:video:url" content="{{ page.video }}">
+        <meta property="og:video:height" content="{{ page.video_height }}">
+        <meta property="og:video:width" content="{{ page.video_width }}">
+
+        <!-- Redirect -->
+        <meta http-equiv="refresh" content="0; url={{ page.redirect }}">
+    </head>
+</html>
