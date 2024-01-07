@@ -1,3 +1,8 @@
+{%- if post.published != true -%}
+<div class="post-draft">
+	<span><strong>draft</strong></span>
+</div>
+{%- endif -%}
 <div class="post-categories">
 	{%- for category in post.categories -%}
 		<span>{{ category }}</span>

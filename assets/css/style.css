@@ -463,20 +463,20 @@ pre {
 
 /* blog posts page */
 
-.post-tags, .post-categories {
+.post-tags, .post-categories, .post-draft {
 	/*display*/
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.post-categories {
+.post-categories, .post-draft {
 	/*spacing*/
 	/* do this so the categories and tags are distinguished */
 	margin-bottom: 4px;
 }
 
-.post-tags>span, .post-categories>span {
+.post-tags>span, .post-categories>span, .post-draft>span {
 	/*spacing*/
 	margin-bottom: 4px;
 	margin-right: 0.5em;
@@ -492,7 +492,11 @@ pre {
 }
 
 .post-categories>span {
-	border-radius: 16px
+	border-radius: 16px;
+}
+
+.post-draft>span {
+	border-radius: 32px;
 }
 
 
