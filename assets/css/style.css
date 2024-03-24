@@ -359,16 +359,16 @@ a:visited {
 	top: 0;
 	left: 0;
 }
+
 #nav-burger-checkbox {
 	opacity: 0;
-	width: 48px;
-	height: 54px;
-	order: 1;
 }
 @media not (min-width: 768px) {
 	#nav-burger-checkbox + label {
 		display: inline-block;
 		width: 48px;
+		height: 54px;
+		order: 1;
 		content: url(/navburger.svg);
 	}
 
@@ -384,6 +384,11 @@ a:visited {
 @media (min-width: 768px) {
 	#nav-burger-checkbox + label {
 		display: none;
+	}
+
+	#nav-burger-checkbox {
+		width: 0px;
+		height: 0px;
 	}
 }
 
