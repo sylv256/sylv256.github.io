@@ -1,18 +1,18 @@
 ---
-title: Vulpixel
-permalink: /vulpixel/
+title: Fishpixel
+permalink: /fishpixel/
 description: A queer-friendly Minecraft modding group!
 ---
 
-# Vulpixel
+# Fishpixel
 <a href="https://github.com/VulpixelMC"><img alt="github-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/github-plural_vector.svg"></a>
-<a href="/vulpixel/discord"><img alt="discord-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg"></a>
+<a href="/fishpixel/discord"><img alt="discord-plural" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/social/discord-plural_vector.svg"></a>
 
 ## Who We Are
-Vulpixel is a queer-friendly Minecraft modding group that works on various mods such as <a href="#world-in-a-jar">World In a Jar</a> and <a href="#tinyquest">TinyQuest</a>!
+Fishpixel is a queer-friendly Minecraft modding group that works on various mods such as <a href="#world-in-a-jar">World In a Jar</a> and <a href="#tinyquest">TinyQuest</a>!
 
-### I'd like to join Vulpixel
-If you want to join Vulpixel, send [contact@sylv.gay](mailto:contact@sylv.gay) an email with your application. It generally shouldn't be hard to get in, but don't take it personally if we don't accept your application.
+### I'd like to join Fishpixel
+If you want to join Fishpixel, send [contact@sylv.gay](mailto:contact@sylv.gay) an email with your application. It generally shouldn't be hard to get in, but don't take it personally if we don't accept your application.
 
 ## Projects
 

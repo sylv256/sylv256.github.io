@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /vulpixel/discord/
-redirect: /fishpixel/discord
+permalink: /fishpixel/discord/
+redirect: https://discord.com/invite/WTkbaudBDm
 description: "The official Fishpixel Discord server."
 ---
