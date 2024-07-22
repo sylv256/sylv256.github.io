@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /vulpixel/
-redirect: /fishpixel
+permalink: /fishpixel/
+redirect: /vulpixel
 description: A queer-friendly Minecraft modding group!
 ---

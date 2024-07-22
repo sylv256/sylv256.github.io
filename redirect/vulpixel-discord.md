@@ -1,6 +1,6 @@
 ---
 layout: redirect
 permalink: /vulpixel/discord/
-redirect: /fishpixel/discord
-description: "The official Fishpixel Discord server."
+redirect: https://discord.com/invite/WTkbaudBDm
+description: "The official Vulpixel Discord server."
 ---
