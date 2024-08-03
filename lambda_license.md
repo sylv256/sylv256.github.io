@@ -1,6 +1,6 @@
 ---
 title: Lambda License
-path: /licenses/lambda/
+permalink: /licenses/lambda/
 ---
 
 The Lambda License
