@@ -24,7 +24,7 @@ description:
   Sylv’s personal pocket dimension. sylv.gay describes Sylv’s projects, important links, and other cool things.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://sylv.gay" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: SylvKT
+github_username: sylv256
 favicon: icon_128.png
 timezone: America/New_York
 paginate: 5
