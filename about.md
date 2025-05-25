@@ -3,11 +3,13 @@ title: About
 permalink: /about/
 ---
 
-# About Us
-We are an endogenic system composed mostly of Sylveons, and we are all otherkins, therians, and furries with varying fursonas. We enjoy programming, Minecraft modding, math, physics, linguistics, history, poetry, music, and art.
+# About Me
+Hello, I'm Sylv! I enjoy programming, game development, Minecraft modding, math, physics, history, and the arts.
 
-We support all good-faith queer identities (radical inclusivity), mspec lesbians/gays, and endogenic systems. We do not support transmeds (transmedicalists), sysmeds (system-medicalists), or any other form of medicalism.
+## About This Place
+I've mostly demolished my pevious website because it was rather unprofessional (and rather unreasonable for a non-LGBTQIA+ person to understand).
+However, I am a furry and trans, yes, and I will not hide that.
 
-*under constructio*
+I do believe it is rather unfortunate that I chose `sylv.gay` and not, say, `sylv12345.net`, because it most certainly sounds like the kind of domain
+name a scammer would use, but it's what I've been using for two years, and that's something I can't really change at this point.
 
-# empty space lol
