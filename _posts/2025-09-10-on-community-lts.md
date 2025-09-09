@@ -1,6 +1,6 @@
 ---
 title: On Community LTS
-description: How will the Minecraft modding community cope with the never-ending barage of breaking updates? Most certainly not with standards.
+description: How will the Minecraft modding community cope with the never-ending cycle of breaking updates? Most certainly not with standards.
 date: 2025-09-09T05:59:01.334Z
 tags:
   - standard minecraft version
