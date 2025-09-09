@@ -518,7 +518,8 @@ pre {
 }
 
 .post-description * {
-	line-height: 0.0625em;
+	margin-top: 0.0625em;
+	margin-bottom: 0.0625em;
 }
 
 .post-description>span {
