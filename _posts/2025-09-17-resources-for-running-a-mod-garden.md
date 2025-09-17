@@ -28,7 +28,7 @@ published: 2025-09-17T01:45:36.410Z
 
 Additionally, this is a living document, meaning that anything here can and likely will change in the future.
 
-So you're wondering how to run a Mod Garden event? Awesome! Below is a list of links and brief explanations on how Mod Garden events are run and how you can run one yourself. This is primarily for Mod Garden team members and volunteers, but this may also be helpful to others as well.
+So you're wondering how to run a Mod Garden event? Awesome! Below is a list of links and brief explanations on how Mod Garden events are run and how you can run one yourself. This is primarily for Mod Garden team members and volunteers, but this may be helpful to others as well.
 
 ## Mod Garden
 This is a list of resources by Mod Garden:
