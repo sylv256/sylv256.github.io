@@ -10,8 +10,4 @@ permalink: /
 Hello, welcome to my website.
 
 ## Links
-[pronouns.page](https://en.pronouns.page/@sylv256)<br>
-[GitHub](https://github.com/SylvKT)<br>
-[Discord Server](/discord)<br>
-[Bluesky](https://bsky.app/profile/sylv.gay)<br>
-
+[GitHub](https://github.com/sylv256)<br>
