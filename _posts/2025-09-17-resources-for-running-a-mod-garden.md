@@ -38,5 +38,5 @@ This is a list of resources by Mod Garden:
 
 ## ModFest
 Here's a list of resources ModFest has on running their events:
-- [How (Not) to Run a ModFest | BlanketCon '25](https://www.youtube.com/watch?v=b_x-Ic2fqm4)
+- [How (Not) to Run a ModFest \| BlanketCon '25](https://www.youtube.com/watch?v=b_x-Ic2fqm4)
 - [ModFest Guides](https://modfest.net/pages/modfest)
