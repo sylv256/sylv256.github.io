@@ -3,6 +3,6 @@ title: Contact
 permalink: /contact/
 ---
 
-#### Public/Business Email
+#### Public Email
 [`contact@sylv.gay`](mailto:contact@sylv.gay)
 
