@@ -18,7 +18,9 @@ author: Sylv
 
 I highly recommend you read [this article](https://notes.highlysuspect.agency/blog/the_treadmill/) on the version treadmill as it is important to understanding the issue at hand. This will be a more chaotic post since it's my first, and I'm not the best writer. I hope to improve upon it in the future.
 
-I am also currently working on another blog post with more research that may take longer, but it will have suggestions for improvements and discussion of COLTS's potential effects.
+~~I am also currently working on another blog post with more research that may take longer, but it will have suggestions for improvements and discussion of COLTS's potential effects.~~
+
+**Addendum:** since the new version format has dropped, I feel like this is no longer as much of an issue now that mods can confidently say they'll port to "27.1" or "28.4" or "yy.1" annually providing an easy porting schedule.
 
 One last thing: **do not [harass](https://en.wikipedia.org/wiki/Harassment) anyone.** We are here to change the atmosphere of modding, not destroy lives.
 
