@@ -2,7 +2,7 @@
 title: A Better COLTS
 description: "The last one was a shitshow. Can we do any better?"
 date: null
-preview: 2026-03-30T00:00:00.000Z"
+preview: 2025-09-17T01:34:50.883Z"
 tags:
   - community lts
   - community
