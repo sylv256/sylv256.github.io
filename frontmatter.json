@@ -69,10 +69,6 @@
     {
       "title": "_posts",
       "path": "[[workspace]]/_posts"
-    },
-    {
-      "title": "_drafts",
-      "path": "[[workspace]]/_drafts"
     }
   ],
   "frontMatter.dashboard.openOnStart": true,
